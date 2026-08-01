@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "Website Interaktif Optimal Konsultan - Konsultan Pajak UMKM, Startup & Pengusaha Muda",
   "main": "index.html",
-  "scripts": {
-    "dev": "npx serve .",
-    "build": "echo 'Build complete'",
-    "start": "npx serve ."
-  },
   "keywords": [
     "pajak-umkm",
     "konsultan-pajak",

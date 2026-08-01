@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "optimal-konsultan",
+  "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
