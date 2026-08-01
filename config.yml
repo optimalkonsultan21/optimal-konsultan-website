@@ -1,0 +1,68 @@
+backend:
+  name: github
+  repo: optimalkonsultan21/optimal-konsultan-website
+  branch: main
+
+media_folder: "assets"
+public_folder: "assets"
+
+collections:
+  - name: "settings"
+    label: "Pengaturan Website & Kontak"
+    files:
+      - file: "content/settings.json"
+        label: "Kontak & Promo"
+        name: "general"
+        fields:
+          - { label: "Nomor WhatsApp (misal: 628123400008)", name: "whatsapp_number", widget: "string" }
+          - { label: "Email Kontak", name: "contact_email", widget: "string" }
+          - { label: "Alamat Kantor", name: "office_address", widget: "string" }
+          - { label: "Teks Promo Topbar", name: "topbar_promo_text", widget: "string" }
+          - { label: "Judul Hero", name: "hero_title", widget: "string" }
+          - { label: "Deskripsi Hero", name: "hero_description", widget: "text" }
+
+  - name: "services"
+    label: "Paket Layanan Pajak"
+    files:
+      - file: "content/services.json"
+        label: "Daftar Paket Layanan"
+        name: "services_list"
+        fields:
+          - label: "Paket Layanan"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Nama Paket", name: "title", widget: "string" }
+              - { label: "Subjudul / Target", name: "subtitle", widget: "string" }
+              - { label: "Harga (misal: Rp 750rb / bulan)", name: "price", widget: "string" }
+              - { label: "Badge Populer", name: "popular", widget: "boolean", default: false }
+              - { label: "Fitur Layanan", name: "features", widget: "list" }
+
+  - name: "faq"
+    label: "FAQ Pajak & PTKP"
+    files:
+      - file: "content/faq.json"
+        label: "Daftar FAQ"
+        name: "faq_list"
+        fields:
+          - label: "Daftar Pertanyaan"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Pertanyaan", name: "question", widget: "string" }
+              - { label: "Jawaban Lengkap", name: "answer", widget: "markdown" }
+              - { label: "Highlight Box / Contoh", name: "highlight", widget: "string", required: false }
+
+  - name: "consultant"
+    label: "Profil Konsultan Senior"
+    files:
+      - file: "content/consultant.json"
+        label: "Detail Profil Mas Andri"
+        name: "profile"
+        fields:
+          - { label: "Nama & Gelar Lengkap", name: "full_name", widget: "string" }
+          - { label: "Sapaan Akrab", name: "nickname", widget: "string" }
+          - { label: "Jabatan", name: "title", widget: "string" }
+          - { label: "Filosofi Kerja / Quote", name: "quote", widget: "string" }
+          - { label: "Foto Profil", name: "photo", widget: "image" }
+          - { label: "Kualifikasi & Sertifikasi", name: "certifications", widget: "list" }
