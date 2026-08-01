@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "title": "Paket Pajak UMKM Bulanan",
+      "subtitle": "Untuk Usaha Kuliner, Online Shop, Restoran & Jasa",
+      "price": "Rp 750rb / bulan",
+      "popular": true,
+      "features": [
+        "Pembukuan & Rekonsiliasi Bank Bulanan",
+        "Perhitungan PPh Final UMKM 0.5% (PP 55)",
+        "Pembuatan E-Billing & Pelaporan SPT Bulanan",
+        "Penerbitan & Input e-Faktur PPN / PPh 23",
+        "Gratis Konsultasi Rutin via WhatsApp Group"
+      ]
+    },
+    {
+      "title": "Pembuatan SPT Tahunan Orang Pribadi",
+      "subtitle": "Untuk Pengusaha, Freelancer, Professional & Karyawan",
+      "price": "Rp 500rb / tahun",
+      "popular": false,
+      "features": [
+        "Perhitungan Batas PTKP (TK/0 s/d K/3)",
+        "Penyusunan Daftar Harta & Utang Legal",
+        "Input Bukti Potong (1721-A1/A2 / PPh 23)",
+        "Pelaporan e-Filing DJP Online Resmi",
+        "Bukti Penerimaan Elektronik (BPE) DJP"
+      ]
+    },
+    {
+      "title": "Pendirian PT/CV & Tax Set-Up",
+      "subtitle": "Untuk Startup & Founders Baru Berdiri",
+      "price": "Rp 1.500rb / paket",
+      "popular": false,
+      "features": [
+        "Pengurusan NPWP Badan & Aktivasi EFIN",
+        "Sertifikat Elektronik & Akun DJP Online Badan",
+        "Konsultasi Pemilihan PT vs CV dari Sisi Pajak",
+        "Permohonan Pengukuhan PKP (Jika Diperlukan)",
+        "Bonus 1 Bulan Bebas Konsultasi Pajak Badan"
+      ]
+    }
+  ]
+}

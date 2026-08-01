@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "question": "Berapa batas omset bebas pajak untuk UMKM Orang Pribadi?",
+      "answer": "Berdasarkan PP No. 55 Tahun 2022 (turunan UU HPP), Wajib Pajak Orang Pribadi UMKM yang menggunakan tarif PPh Final 0.5% diberikan batas Omset Tidak Kena Pajak hingga Rp 500.000.000 (Lima Ratus Juta Rupiah) per tahun pajak.",
+      "highlight": "💡 Contoh: Jika omset usaha Anda Rp 400 Juta dalam setahun, maka setoran PPh Final Anda adalah Rp 0 (Bebas Pajak)."
+    },
+    {
+      "question": "Bagaimana aturan batas PTKP (Penghasilan Tidak Kena Pajak) terbaru?",
+      "answer": "Batas PTKP dasar saat ini adalah: TK/0 (Lajang): Rp 54 Juta/thn, K/0 (Menikah 0 anak): Rp 58.5 Juta/thn, K/1 (Menikah 1 anak): Rp 63 Juta/thn, K/2 (Menikah 2 anak): Rp 67.5 Juta/thn, K/3 (Menikah 3 anak): Rp 72 Juta/thn.",
+      "highlight": "💡 Jika penghasilan bersih tahunan di bawah batas PTKP, maka tidak dikenakan PPh Pasal 21."
+    },
+    {
+      "question": "Apakah PT atau CV baru berdiri bisa langsung pakai tarif 0.5%?",
+      "answer": "Ya, Wajib Pajak Badan baru (PT atau CV) yang beromset di bawah Rp 4.8 Miliar per tahun dapat memanfaatkan PPh Final UMKM 0.5%. Batas waktu: PT maks 3 tahun, CV maks 4 tahun, Orang Pribadi maks 7 tahun.",
+      "highlight": ""
+    },
+    {
+      "question": "Kapan usaha saya wajib mendaftar sebagai Pengusaha Kena Pajak (PKP)?",
+      "answer": "Usaha Wajib mendaftar PKP jika omset bruto (omset kotor) dalam 1 tahun buku telah melebihi Rp 4.800.000.000 (4.8 Miliar).",
+      "highlight": ""
+    },
+    {
+      "question": "Bagaimana jika saya menerima surat SP2DK dari kantor pajak DJP?",
+      "answer": "Jangan panik! SP2DK adalah klarifikasi selisih data. Segera konsultasikan ke Optimal Konsultan agar kami bisa mereview data penjualan, menyusun jawaban tertulis sesuai hukum pajak, dan mendampingi hingga selesai.",
+      "highlight": ""
+    }
+  ]
+}
