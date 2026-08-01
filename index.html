@@ -47,6 +47,7 @@
         <li><a href="#konsultan" class="nav-link">Konsultan Kami</a></li>
         <li><a href="#layanan" class="nav-link">Paket Layanan</a></li>
         <li><a href="#kalkulator" class="nav-link">Kalkulator Pajak</a></li>
+        <li><a href="#artikel" class="nav-link">Artikel</a></li>
         <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
         <li><a href="#faq" class="nav-link">FAQ</a></li>
       </ul>
@@ -684,6 +685,27 @@
     </div>
   </section>
 
+  <!-- SECTION ARTIKEL & PANDUAN -->
+  <section class="articles-section" id="artikel">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag orange">
+          <i class="fas fa-newspaper"></i> Edukasi &amp; Panduan Pajak
+        </div>
+        <h2 class="section-title">
+          Artikel <span class="highlight-orange">&amp; Panduan Pajak Terbaru</span>
+        </h2>
+        <p class="section-subtitle">
+          Tips praktis, panduan hukum, dan wawasan perpajakan terkini khusus untuk pemilik UMKM, Startup, dan Pengusaha Muda.
+        </p>
+      </div>
+
+      <div class="articles-grid" id="articlesGridContainer">
+        <!-- Dynamically populated from content/articles.json -->
+      </div>
+    </div>
+  </section>
+
   <!-- SECTION 4: TESTIMONI -->
   <section class="testimonials" id="testimoni">
     <div class="container">
@@ -1010,6 +1032,16 @@
           <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Kirim Pesan & Buka WhatsApp
         </button>
       </form>
+    </div>
+  </div>
+
+  <!-- ARTICLE READER POPUP MODAL -->
+  <div class="modal-overlay" id="articleReaderModal">
+    <div class="modal-card" style="max-width: 720px; max-height: 90vh; overflow-y: auto;">
+      <button class="modal-close-btn" onclick="document.getElementById('articleReaderModal').classList.remove('active')">&times;</button>
+      <div id="articleReaderBody">
+        <!-- Dynamically filled by openArticleModal -->
+      </div>
     </div>
   </div>
 

@@ -228,6 +228,7 @@
       <button class="tab-btn" onclick="switchTab('services')"><i class="fas fa-boxes"></i> Paket Layanan</button>
       <button class="tab-btn" onclick="switchTab('faq')"><i class="fas fa-question-circle"></i> FAQ Pajak</button>
       <button class="tab-btn" onclick="switchTab('consultant')"><i class="fas fa-user-tie"></i> Profil Konsultan</button>
+      <button class="tab-btn" onclick="switchTab('articles')"><i class="fas fa-newspaper"></i> Artikel &amp; Panduan</button>
     </div>
 
     <!-- TAB 1: SETTINGS -->
@@ -301,6 +302,18 @@
           <input type="text" id="con_quote" required>
         </div>
         <button type="submit" class="btn btn-orange"><i class="fas fa-cloud-upload-alt"></i> Simpan &amp; Sync ke GitHub</button>
+      </form>
+    </div>
+
+    <!-- TAB 5: ARTICLES -->
+    <div class="tab-content" id="tab-articles">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h3 style="color: var(--text-white);">Kelola Artikel &amp; Panduan Pajak</h3>
+        <button class="btn btn-teal" type="button" onclick="addNewArticleForm()"><i class="fas fa-plus"></i> Tambah Artikel Baru</button>
+      </div>
+      <form id="formArticles" onsubmit="saveArticles(event)">
+        <div id="articlesContainer"></div>
+        <button type="submit" class="btn btn-orange" style="margin-top: 1rem;"><i class="fas fa-cloud-upload-alt"></i> Simpan Artikel &amp; Sync ke GitHub</button>
       </form>
     </div>
 
@@ -416,6 +429,82 @@
         document.getElementById('con_title').value = consultant.title || '';
         document.getElementById('con_quote').value = consultant.quote || '';
       }
+
+      // Load Articles
+      const articlesData = await fetchJsonFile('articles.json');
+      if (articlesData && articlesData.articles) {
+        renderArticlesList(articlesData.articles);
+      }
+    }
+
+    function renderArticlesList(articles) {
+      const container = document.getElementById('articlesContainer');
+      container.innerHTML = articles.map((art, idx) => `
+        <div style="background: #0F172A; padding: 1.25rem; border-radius: 8px; margin-bottom: 1.25rem; border: 1px solid var(--border-color);" class="art-block">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <h4 style="color: var(--primary-orange);">Artikel #${idx+1}</h4>
+            <button type="button" style="background: #EF4444; color: #FFF; border: none; padding: 0.3rem 0.75rem; border-radius: 4px; cursor: pointer; font-size: 0.8rem;" onclick="this.closest('.art-block').remove()">Hapus</button>
+          </div>
+          <div class="form-group">
+            <label>Judul Artikel:</label>
+            <input type="text" value="${art.title}" class="art-title">
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label>Kategori:</label>
+              <input type="text" value="${art.category || 'Pajak UMKM'}" class="art-cat">
+            </div>
+            <div class="form-group">
+              <label>Tanggal Rilis (YYYY-MM-DD):</label>
+              <input type="text" value="${art.date || '2026-08-01'}" class="art-date">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Ringkasan Singkat:</label>
+            <textarea rows="2" class="art-summary">${art.summary || ''}</textarea>
+          </div>
+          <div class="form-group">
+            <label>Isi Artikel Lengkap:</label>
+            <textarea rows="5" class="art-content">${art.content || ''}</textarea>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function addNewArticleForm() {
+      const container = document.getElementById('articlesContainer');
+      const newDiv = document.createElement('div');
+      newDiv.style.cssText = 'background: #0F172A; padding: 1.25rem; border-radius: 8px; margin-bottom: 1.25rem; border: 1px solid var(--secondary-teal);';
+      newDiv.className = 'art-block';
+      newDiv.innerHTML = `
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+          <h4 style="color: var(--secondary-teal);">Artikel Baru ✨</h4>
+          <button type="button" style="background: #EF4444; color: #FFF; border: none; padding: 0.3rem 0.75rem; border-radius: 4px; cursor: pointer; font-size: 0.8rem;" onclick="this.closest('.art-block').remove()">Hapus</button>
+        </div>
+        <div class="form-group">
+          <label>Judul Artikel:</label>
+          <input type="text" placeholder="Judul artikel baru..." class="art-title">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label>Kategori:</label>
+            <input type="text" value="Pajak UMKM" class="art-cat">
+          </div>
+          <div class="form-group">
+            <label>Tanggal Rilis:</label>
+            <input type="text" value="${new Date().toISOString().split('T')[0]}" class="art-date">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Ringkasan Singkat:</label>
+          <textarea rows="2" placeholder="Ringkasan..." class="art-summary"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Isi Artikel Lengkap:</label>
+          <textarea rows="5" placeholder="Isi artikel..." class="art-content"></textarea>
+        </div>
+      `;
+      container.prepend(newDiv);
     }
 
     async function pushFileToGitHub(filePath, contentObj) {
@@ -429,7 +518,6 @@
       try {
         const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${filePath}`;
         
-        // Get SHA of current file
         let sha = '';
         const getRes = await fetch(apiUrl, {
           headers: { Authorization: `token ${token}` }
@@ -440,7 +528,6 @@
         }
 
         const contentJson = JSON.stringify(contentObj, null, 2);
-        // Base64 encode supporting UTF-8
         const contentB64 = btoa(unescape(encodeURIComponent(contentJson)));
 
         const putRes = await fetch(apiUrl, {
@@ -519,6 +606,28 @@
         photo: "assets/mas_andri_profile.jpg"
       };
       await pushFileToGitHub('content/consultant.json', data);
+    }
+
+    async function saveArticles(e) {
+      e.preventDefault();
+      const articles = [];
+      document.querySelectorAll('#articlesContainer > .art-block').forEach((div, idx) => {
+        const title = div.querySelector('.art-title').value;
+        if (title) {
+          articles.push({
+            id: 'art-' + idx + '-' + Date.now(),
+            title: title,
+            category: div.querySelector('.art-cat').value || 'Pajak UMKM',
+            date: div.querySelector('.art-date').value || new Date().toISOString().split('T')[0],
+            author: 'Mas Andri, S.E., Ak., M.Ak.',
+            readTime: '5 min baca',
+            image: 'assets/hero_tax_consultant.jpg',
+            summary: div.querySelector('.art-summary').value,
+            content: div.querySelector('.art-content').value
+          });
+        }
+      });
+      await pushFileToGitHub('content/articles.json', { articles });
     }
   </script>
 </body>

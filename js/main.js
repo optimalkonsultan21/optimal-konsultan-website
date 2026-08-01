@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initTaxCalculator();
   initProblemSolutionFilter();
+  initArticles();
   initTestimonialFilter();
   initFaqAccordion();
   initFaqSearch();
@@ -14,6 +15,79 @@ document.addEventListener('DOMContentLoaded', () => {
   initConsultationModal();
   initWhatsAppWidget();
 });
+
+/* ==========================================================================
+   DYNAMIC ARTICLES SYSTEM
+   ========================================================================== */
+async function initArticles() {
+  const container = document.getElementById('articlesGridContainer');
+  if (!container) return;
+
+  try {
+    const res = await fetch('content/articles.json?v=' + Date.now());
+    const data = await res.json();
+    
+    if (data && data.articles && data.articles.length) {
+      window.loadedArticles = data.articles;
+      container.innerHTML = data.articles.map(art => `
+        <article class="article-card">
+          <div class="article-img-wrapper">
+            <img src="${art.image || 'assets/hero_tax_consultant.jpg'}" alt="${art.title}">
+            <span class="article-cat-badge">${art.category || 'Panduan Pajak'}</span>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span><i class="far fa-calendar-alt"></i> ${art.date}</span>
+              <span><i class="far fa-clock"></i> ${art.readTime || '5 min'}</span>
+            </div>
+            <h3 class="article-title">${art.title}</h3>
+            <p class="article-summary">${art.summary}</p>
+            <button class="article-read-btn" onclick="openArticleModal('${art.id}')">
+              Baca Selengkapnya <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+  } catch (e) {
+    console.error('Error loading articles:', e);
+  }
+}
+
+window.openArticleModal = function(articleId) {
+  if (!window.loadedArticles) return;
+  const art = window.loadedArticles.find(a => a.id === articleId);
+  if (!art) return;
+
+  const modal = document.getElementById('articleReaderModal');
+  const body = document.getElementById('articleReaderBody');
+
+  if (modal && body) {
+    body.innerHTML = `
+      <div class="badge-tag orange" style="margin-bottom: 0.5rem;">${art.category}</div>
+      <h2 style="font-size: 1.75rem; color: var(--neutral-dark); margin-bottom: 0.75rem;">${art.title}</h2>
+      <div style="font-size: 0.85rem; color: var(--neutral-muted); margin-bottom: 1.5rem; display: flex; gap: 1.5rem;">
+        <span><i class="far fa-user"></i> Penulis: <strong>${art.author}</strong></span>
+        <span><i class="far fa-calendar-alt"></i> ${art.date}</span>
+      </div>
+      <img src="${art.image || 'assets/hero_tax_consultant.jpg'}" style="width: 100%; max-height: 320px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+      <div style="font-size: 1rem; line-height: 1.8; color: var(--neutral-body); white-space: pre-line;">
+        ${art.content}
+      </div>
+      <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--neutral-border); text-align: center;">
+        <button class="btn btn-primary-wa" onclick="openWaWithArticle('${art.title}')">
+          <i class="fab fa-whatsapp"></i> Konsultasikan Topik Ini Bersama Mas Andri
+        </button>
+      </div>
+    `;
+    modal.classList.add('active');
+  }
+};
+
+window.openWaWithArticle = function(title) {
+  const msg = `Halo Mas Andri, saya membaca artikel "${title}" di website Optimal Konsultan.%0AIngin konsultasi lebih lanjut terkait bisnis saya. Terima kasih!`;
+  window.open(`https://wa.me/628123400008?text=${msg}`, '_blank');
+};
 
 /* ==========================================================================
    1. NAVBAR & MOBILE NAVIGATION

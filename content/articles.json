@@ -1,0 +1,37 @@
+{
+  "articles": [
+    {
+      "id": "panduan-pajak-umkm-pp55",
+      "title": "Panduan Lengkap Pajak UMKM 0.5% & Bebas Pajak Omset s/d 500 Juta (PP 55/2022)",
+      "category": "Pajak UMKM",
+      "date": "2026-08-01",
+      "author": "Mas Andri, S.E., Ak., M.Ak.",
+      "readTime": "5 min baca",
+      "image": "assets/hero_tax_consultant.jpg",
+      "summary": "Pahami aturan fasilitas bebas pajak hingga omset Rp 500 juta/tahun untuk Wajib Pajak Orang Pribadi dan skema PPh Final 0.5% sesuai PP 55 Tahun 2022.",
+      "content": "Pemerintah memberikan insentif besar bagi pelaku UMKM melalui Peraturan Pemerintah (PP) No. 55 Tahun 2022. Wajib Pajak Orang Pribadi UMKM yang memanfaatkan tarif PPh Final 0.5% kini mendapatkan fasilitas omset bebas pajak hingga Rp 500.000.000 (Lima Ratus Juta Rupiah) per tahun.\n\n### Siapa Yang Berhak Menerima Fasilitas Ini?\n- Wajib Pajak Orang Pribadi yang memiliki usaha dengan omset di bawah Rp 4.8 Miliar per tahun.\n- Tidak berlaku untuk Wajib Pajak Badan (PT/CV), di mana PT/CV tetap membayar 0.5% dari total omset bruto sejak rupiah pertama.\n\n### Cara Menghitung Pajak UMKM OP:\nJika omset usaha Anda dalam setahun Rp 700.000.000:\n1. Omset Kena Pajak = Rp 700 Juta - Rp 500 Juta = Rp 200 Juta.\n2. PPh Final 0.5% = Rp 200 Juta x 0.5% = Rp 1.000.000/tahun.\n\nSangat hemat dan membantu cashflow bisnis Anda!"
+    },
+    {
+      "id": "menjawab-sp2dk-djp",
+      "title": "Cara Menjawab Surat SP2DK DJP Tanpa Panik: Langkah Hukum & Administrasi",
+      "category": "SP2DK & Audit",
+      "date": "2026-07-25",
+      "author": "Mas Andri, S.E., Ak., M.Ak.",
+      "readTime": "7 min baca",
+      "image": "assets/consultant_avatar.jpg",
+      "summary": "Menerima surat SP2DK dari kantor pajak? Jangan panik! Pelajari cara menanggapi klarifikasi data omset dan pembukuan secara resmi dan legal.",
+      "content": "Surat Permintaan Penjelasan atas Data dan/atau Keterangan (SP2DK) diterbitkan oleh Kantor Pelayanan Pajak (KPP) saat indikasi selisih data penjualan, rekening bank, atau e-Faktur ditemukan.\n\n### 4 Langkah Menanggapi SP2DK:\n1. **Jangan Diabaikan**: Batas waktu tanggapan resmi biasanya 14 hari kerja sejak surat diterima.\n2. **Rekonsiliasi Data**: Bandingkan data di SP2DK dengan mutasi rekening bank dan Laporan Keuangan usaha Anda.\n3. **Susun Tanggapan Tertulis**: Lampirkan bukti pendukung seperti rekapitulasi omset, faktur pajak, atau bukti pemotongan PPh.\n4. **Dampingi Oleh Konsultan**: Konsultan pajak membantu memastikan argumen hukum Anda kuat agar tidak diterbitkan Surat Ketetapan Pajak Kurang Bayar (SKPKB) membengkak."
+    },
+    {
+      "id": "pt-perorangan-vs-cv-pajak",
+      "title": "Pilih PT Perorangan vs CV: Mana Yang Lebih Hemat Pajak untuk Startup?",
+      "category": "Legalitas PT/CV",
+      "date": "2026-07-18",
+      "author": "Mas Andri, S.E., Ak., M.Ak.",
+      "readTime": "6 min baca",
+      "image": "assets/hero_tax_consultant.jpg",
+      "summary": "Bingung menentukan legalitas badan usaha awal? Simak perbandingan dampak pajak antara PT Perorangan, PT Biasa, dan CV dari perspektif perpajakan.",
+      "content": "Bagi founder startup dan pengusaha muda, memilih bentuk legalitas usaha sangat mempengaruhi besaran kewajiban pajak bulanan dan tahunan.\n\n### Perbedaan Pajak PT vs CV:\n- **PT (Perseroan Terbatas)**:\n  - Tarif PPh Final 0.5% berlaku selama **3 Tahun Pajak**.\n  - Pembagian dividen ke pemegang saham bisa bebas PPh Pasal 4(2) jika diinvestasikan kembali di Indonesia.\n- **CV (Comanditaire Vennootschap)**:\n  - Tarif PPh Final 0.5% berlaku selama **4 Tahun Pajak**.\n  - Prive (pengambilan uang oleh pemilik) **bukan merupakan objek pajak**."
+    }
+  ]
+}
