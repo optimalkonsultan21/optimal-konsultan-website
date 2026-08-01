@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimal Konsultan | Konsultan Pajak UMKM, Startup & Pengusaha Muda</title>
+  <meta name="description" content="Konsultan pajak ramah dan transparan untuk UMKM, Startup, dan Pengusaha Muda. Urus Pajak Bisnis Anda dengan Hemat, Bebas Denda, dan Bebas Pusing. Gratis Konsultasi 1 Sesi!">
+  <meta name="keywords" content="konsultan pajak, pajak umkm, pth 0.5%, ptkp, spt tahunan, e-faktur, pendirian pt cv, optimal konsultan">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo_optimal_konsultan.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span class="top-bar-pill">PROMO KHUSUS UMKM</span>
+      <span>🔥 <strong>Gratis Sesi Konsultasi Pajak Pertama</strong> khusus untuk Pemilik Bisnis & Startup!</span>
+      <a href="javascript:void(0)" onclick="openConsultModal('Konsultasi Gratis Sesi 1')" style="color: #FFE600; text-decoration: underline; margin-left: 0.5rem; font-weight: 700;">Ambil Promo &rarr;</a>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="nav-brand">
+        <img src="assets/logo_optimal_konsultan.png" alt="Optimal Konsultan Logo" class="nav-logo">
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+        <li><a href="#masalah-solusi" class="nav-link">Masalah & Solusi</a></li>
+        <li><a href="#konsultan" class="nav-link">Konsultan Kami</a></li>
+        <li><a href="#layanan" class="nav-link">Paket Layanan</a></li>
+        <li><a href="#kalkulator" class="nav-link">Kalkulator Pajak</a></li>
+        <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline-teal" onclick="openConsultModal('Tanya Konsultan')">
+          <i class="far fa-comments"></i> Tanya Pajak
+        </button>
+        <button class="btn btn-primary-wa" onclick="openConsultModal('Gratis Konsultasi WhatsApp')">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="beranda">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-tag orange">
+          <i class="fas fa-shield-alt"></i> Solusi Pajak Santai & Transparan
+        </div>
+        <h1>
+          Urus Pajak Bisnis Anda dengan <span class="text-orange">Hemat</span> & <span class="text-teal">Bebas Pusing</span>
+        </h1>
+        <p class="hero-description">
+          Optimal Konsultan hadir membantu pemilik UMKM, Startup, dan Pengusaha Muda mengelola pembukuan, e-Faktur, PPh 0.5%, hingga SPT Tahunan dengan legal, aman dari sanksi denda, dan ramah kantong.
+        </p>
+
+        <div class="hero-cta-group">
+          <div class="hero-wa-btn-container">
+            <button class="btn btn-primary-wa" onclick="openConsultModal('Gratis Konsultasi 1 Sesi WhatsApp')">
+              <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> 
+              Hubungi via WhatsApp, Gratis konsultasi untuk satu sesi
+            </button>
+            <span class="sub-text">
+              <i class="fas fa-check-circle"></i> Respon cepat &lt; 15 menit • Tanpa komitmen bayar
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-trust-badges">
+          <div class="trust-item">
+            <div class="trust-icon">
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="trust-text">
+              <div class="number">500+</div>
+              <div class="label">UMKM Dampingan</div>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <i class="fas fa-percentage"></i>
+            </div>
+            <div class="trust-text">
+              <div class="number">0.5%</div>
+              <div class="label">Optimasi Pajak Legal</div>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <div class="trust-text">
+              <div class="number">100%</div>
+              <div class="label">Aman dari Denda DJP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Image & Floating Badges -->
+      <div class="hero-media">
+        <div class="hero-image-wrapper">
+          <img src="assets/hero_tax_consultant.jpg" alt="Tim Optimal Konsultan Membantu Pemilik Bisnis UMKM">
+        </div>
+
+        <div class="hero-floating-card card-top">
+          <div class="floating-icon teal">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <div class="floating-info">
+            <div class="title">e-Faktur & SPT Beres</div>
+            <div class="desc">Tepat waktu & bebas error</div>
+          </div>
+        </div>
+
+        <div class="hero-floating-card card-bottom">
+          <div class="floating-icon orange">
+            <div class="title" style="font-weight: 800; font-size: 1rem;">Rp 0</div>
+          </div>
+          <div class="floating-info">
+            <div class="title">Bebas Pajak s/d 500 Juta</div>
+            <div class="desc">Sesuai aturan PP 55/2022</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: MASALAH & SOLUSI -->
+  <section class="problem-solution" id="masalah-solusi">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag teal">
+          <i class="fas fa-lightbulb"></i> Masalah vs Solusi
+        </div>
+        <h2 class="section-title">
+          Pajak Sering Bikin Pusing? <span class="highlight-orange">Kami Punya Solusinya</span>
+        </h2>
+        <p class="section-subtitle">
+          Banyak pengusaha muda takut berurusan dengan pajak karena istilah rumit dan ancaman denda. Lihat bagaimana kami mengubah mimpi buruk pajak menjadi pengalaman yang tenang.
+        </p>
+      </div>
+
+      <!-- Toggle Filter -->
+      <div class="ps-toggle-bar">
+        <button class="ps-toggle-btn active" data-filter="all">Semua Tampilan</button>
+        <button class="ps-toggle-btn" data-filter="problem">⚠️ Masalah UMKM</button>
+        <button class="ps-toggle-btn" data-filter="solusi">✅ Solusi Optimal Konsultan</button>
+      </div>
+
+      <div class="ps-grid">
+        <!-- Card 1: Problem -->
+        <div class="ps-card problem-type">
+          <div class="ps-card-header">
+            <div class="ps-icon-wrapper">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <span class="ps-status-pill problem">Masalah #1</span>
+          </div>
+          <h3 class="ps-card-title">Takut Sanksi Denda & Surat Cinta (SP2DK) DJP</h3>
+          <p class="ps-card-desc">
+            Sering gelisah setiap ada surat dari kantor pajak karena bingung menjawab klarifikasi omset atau belum pernah lapor SPT Tahunan sejak buat NPWP.
+          </p>
+          <div class="ps-card-impact">
+            <i class="fas fa-arrow-down"></i> Resiko denda akumulasi & pembekuan rekening
+          </div>
+        </div>
+
+        <!-- Card 1: Solution -->
+        <div class="ps-card solusi-type">
+          <div class="ps-card-header">
+            <div class="ps-icon-wrapper">
+              <i class="fas fa-user-check"></i>
+            </div>
+            <span class="ps-status-pill solusi">Solusi Optimal</span>
+          </div>
+          <h3 class="ps-card-title">Pendampingan SP2DK & Tax Audit Kepatuhan</h3>
+          <p class="ps-card-desc">
+            Tim konsultan kami mereview riwayat pembukuan Anda, menyusun tanggapan resmi SP2DK secara profesional, dan mendampingi negosiasi legal dengan fiskus.
+          </p>
+          <div class="ps-card-impact">
+            <i class="fas fa-check-circle"></i> Selesai tenang tanpa denda membengkak
+          </div>
+        </div>
+
+        <!-- Card 2: Problem -->
+        <div class="ps-card problem-type">
+          <div class="ps-card-header">
+            <div class="ps-icon-wrapper">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <span class="ps-status-pill problem">Masalah #2</span>
+          </div>
+          <h3 class="ps-card-title">Bingung Aplikasi e-Faktur & e-Filing DJP Online</h3>
+          <p class="ps-card-desc">
+            Ribet urus sertifikat elektronik EFIN, sertifikat faktur, reject invoice, hingga error sistem DJP saat batas akhir tanggal pelaporan.
+          </p>
+          <div class="ps-card-impact">
+            <i class="fas fa-clock"></i> Menyita waktu fokus pengembangan produk
+          </div>
+        </div>
+
+        <!-- Card 2: Solution -->
+        <div class="ps-card solusi-type">
+          <div class="ps-card-header">
+            <div class="ps-icon-wrapper">
+              <i class="fas fa-magic"></i>
+            </div>
+            <span class="ps-status-pill solusi">Solusi Optimal</span>
+          </div>
+          <h3 class="ps-card-title">Sistem Input & Pelaporan Serba Otomatis</h3>
+          <p class="ps-card-desc">
+            Cukup kirim data penjualan & pembelian. Tim kami yang mengeksekusi pembuatan e-Faktur, billing PPh, dan lapor SPT Masa bulanan dengan rapi.
+          </p>
+          <div class="ps-card-impact">
+            <i class="fas fa-smile"></i> Tinggal terima laporan rapi setiap bulan
+          </div>
+        </div>
+
+        <!-- Card 3: Problem -->
+        <div class="ps-card problem-type">
+          <div class="ps-card-header">
+            <div class="ps-icon-wrapper">
+              <i class="fas fa-funnel-dollar"></i>
+            </div>
+            <span class="ps-status-pill problem">Masalah #3</span>
+          </div>
+          <h3 class="ps-card-title">Bayar Pajak Kepotong Terlalu Besar (Overpaid)</h3>
+          <p class="ps-card-desc">
+            Banyak UMKM membayar pajak dari total omset tanpa tahu adanya insentif batas omset bebas pajak atau aturan PPh Final PP 55 Tahun 2022.
+          </p>
+          <div class="ps-card-impact">
+            <i class="fas fa-coins"></i> Cashflow usaha tergerus pajak yang salah hitung
+          </div>
+        </div>
+
+        <!-- Card 3: Solution -->
+        <div class="ps-card solusi-type">
+          <div class="ps-card-header">
+            <div class="ps-icon-wrapper">
+              <i class="fas fa-piggy-bank"></i>
+            </div>
+            <span class="ps-status-pill solusi">Solusi Optimal</span>
+          </div>
+          <h3 class="ps-card-title">Perencanaan Pajak Hemat & Legal (PP 55/2022)</h3>
+          <p class="ps-card-desc">
+            Memaksimalkan batas omset Rp 500 Juta bebas pajak untuk Orang Pribadi & tarif 0.5% untuk PT/CV. Hemat pengeluaran pajak hingga puluhan juta rupiah!
+          </p>
+          <div class="ps-card-impact">
+            <i class="fas fa-chart-line"></i> Cashflow sehat untuk ekspansi bisnis
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONSULTAN KAMI SECTION -->
+  <section class="consultant-section" id="konsultan">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag orange">
+          <i class="fas fa-award"></i> Tim Ahli Berpengalaman
+        </div>
+        <h2 class="section-title">
+          Konsultan <span class="highlight-orange">Kami</span>
+        </h2>
+        <p class="section-subtitle">
+          Dipimpin oleh konsultan senior berpengalaman dengan sertifikasi nasional &amp; internasional, berdedikasi tinggi memberikan solusi perpajakan &amp; keuangan terbaik bagi UMKM.
+        </p>
+      </div>
+
+      <div class="consultant-card-wrapper">
+        <!-- Sidebar Profile Photo & Quote -->
+        <div class="consultant-sidebar">
+          <div class="consultant-photo-container">
+            <img src="assets/mas_andri_profile.jpg" alt="Muhammad Andri Ashari, SE, Ak, M. Ak., ACPA, QWP®, CTT.">
+          </div>
+          <span class="consultant-role-badge">Direktur &amp; Konsultan Senior</span>
+          
+          <div class="consultant-quote-box">
+            <p><i class="fas fa-quote-left" style="color: var(--primary-orange); margin-right: 0.3rem;"></i> "Bekerja jujur dan efisien demi keberlanjutan bisnis klien."</p>
+            <div class="author">&mdash; Mas Andri</div>
+          </div>
+
+          <div style="margin-top: 1.5rem; width: 100%;">
+            <a href="https://wa.me/628123400008?text=Halo%20Mas%20Andri,%20saya%20tertarik%20konsultasi%20pajak%20langsung" target="_blank" class="btn btn-primary-wa" style="width: 100%; font-size: 0.9rem; padding: 0.75rem 1rem;">
+              <i class="fab fa-whatsapp"></i> Hubungi Mas Andri
+            </a>
+          </div>
+        </div>
+
+        <!-- Main Profile Info -->
+        <div class="consultant-main-info">
+          <div class="consultant-header">
+            <h3 class="consultant-name">Muhammad Andri Ashari, S.E., Ak., M.Ak., ACPA, QWP&reg;, CTT.</h3>
+            <div class="consultant-titles">Partner &amp; Konsultan Senior | Direktur PT Optimal Konsultan Indonesia</div>
+            <div class="consultant-nickname-badge">
+              <i class="fas fa-user"></i> Sapaan Akrab: <strong>Mas Andri</strong>
+            </div>
+            <p style="font-size: 0.95rem; color: var(--neutral-muted); line-height: 1.6;">
+              Berbekal pengalaman lebih dari 15 tahun di bidang keuangan &amp; perpajakan, mendedikasikan kepakaran untuk kemajuan institusi serta aktif mengabdi kepada masyarakat guna meningkatkan literasi keuangan pelaku UMKM. Dosen Praktisi di Politeknik Negeri Cilacap.
+            </p>
+          </div>
+
+          <!-- Spesialisasi Keahlian -->
+          <h4 style="font-size: 1.1rem; margin-bottom: 0.875rem; color: var(--neutral-dark);">
+            <i class="fas fa-star" style="color: var(--primary-orange); margin-right: 0.4rem;"></i> Bidang Spesialisasi:
+          </h4>
+          <div class="consultant-spec-grid">
+            <div class="spec-item">
+              <div class="spec-item-header">
+                <i class="fas fa-wallet"></i> Keuangan
+              </div>
+              <div class="spec-item-desc">Manajemen Strategis, Arus Kas, Restrukturisasi</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item-header">
+                <i class="fas fa-calculator"></i> Akuntansi
+              </div>
+              <div class="spec-item-desc">Laporan Keuangan Sesuai PSAK, Perbaikan Pembukuan</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item-header">
+                <i class="fas fa-file-invoice-dollar"></i> Perpajakan
+              </div>
+              <div class="spec-item-desc">Tax Planning, Kepatuhan, Pendampingan SPT &amp; SP2DK</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item-header">
+                <i class="fas fa-search-dollar"></i> Audit
+              </div>
+              <div class="spec-item-desc">Audit Eksternal, Pengendalian Internal, Laporan Independen</div>
+            </div>
+          </div>
+
+          <!-- Sertifikasi & Kualifikasi -->
+          <h4 style="font-size: 1.1rem; margin-bottom: 0.875rem; color: var(--neutral-dark);">
+            <i class="fas fa-certificate" style="color: var(--secondary-teal); margin-right: 0.4rem;"></i> Kualifikasi &amp; Sertifikasi Resmi:
+          </h4>
+          <div class="cert-tags-container">
+            <span class="cert-tag">Brevet Pajak A &amp; B</span>
+            <span class="cert-tag">ACPA (Associate Certified Public Accountant)</span>
+            <span class="cert-tag">QWP&reg; - FPSB Indonesia</span>
+            <span class="cert-tag">CTT. (Certified Tax Technician)</span>
+            <span class="cert-tag">Teknisi Perpajakan Madya</span>
+            <span class="cert-tag">Pelaksana Ekspor</span>
+            <span class="cert-tag">Pendamping UMKM Resmi</span>
+          </div>
+
+          <!-- Latar Belakang Pendidikan & Pengalaman -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div>
+              <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--neutral-dark);">
+                <i class="fas fa-graduation-cap" style="color: var(--primary-orange);"></i> Pendidikan:
+              </h4>
+              <ul class="timeline-list">
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <div><strong>S1 Akuntansi</strong> &mdash; UNSOED (2006, IPK 3.19)</div>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <div><strong>Pendidikan Profesi Akuntan (PPAk)</strong> &mdash; UNSOED (2021, IPK 4.00)</div>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <div><strong>S2 Akuntansi</strong> &mdash; UNSOED (2025, IPK 3.91)</div>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--neutral-dark);">
+                <i class="fas fa-briefcase" style="color: var(--secondary-teal);"></i> Pengalaman Kerja (&gt;15 Thn):
+              </h4>
+              <ul class="timeline-list">
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <div><strong>PT Telkomsel</strong> (Admin &amp; Keuangan, 2007-2010)</div>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <div><strong>Konsultan Keuangan &amp; Pajak</strong> (2009-2021)</div>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <div><strong>Direktur PT Optimal Konsultan Indonesia</strong> (2021-Sekarang) &amp; Dosen Praktisi PNC</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Publikasi Buku -->
+          <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--neutral-dark);">
+            <i class="fas fa-book" style="color: var(--primary-orange);"></i> Karya Publikasi Buku:
+          </h4>
+          <div class="books-showcase">
+            <div class="book-card">
+              <div class="book-icon"><i class="fas fa-book-open"></i></div>
+              <div class="book-details">
+                <div class="book-title">Manajemen Keuangan UMKM</div>
+                <div class="book-year">Publikasi (2025)</div>
+              </div>
+            </div>
+            <div class="book-card">
+              <div class="book-icon" style="background: var(--secondary-teal);"><i class="fas fa-book-reader"></i></div>
+              <div class="book-details">
+                <div class="book-title">Religiusitas dan Kepatuhan Pajak</div>
+                <div class="book-year">Publikasi (2025)</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PAKET LAYANAN -->
+  <section class="services" id="layanan">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag orange">
+          <i class="fas fa-boxes"></i> Layanan Terlengkap
+        </div>
+        <h2 class="section-title">
+          Paket Layanan Pajak <span class="highlight-teal">Ramah Transparan</span>
+        </h2>
+        <p class="section-subtitle">
+          Tidak ada biaya tersembunyi. Pilih paket pendampingan pajak yang sesuai dengan skala bisnis dan bentuk legalitas usaha Anda.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Pajak UMKM Bulanan -->
+        <div class="service-card popular">
+          <span class="popular-badge">Paling Populer UMKM</span>
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <h3 class="service-title">Paket Pajak UMKM Bulanan</h3>
+            <p class="service-subtitle">Untuk Usaha Kuliner, Online Shop, Retoran & Jasa</p>
+          </div>
+
+          <div class="service-pricing">
+            <div class="price-start">Mulai Dari</div>
+            <div class="price-val">Rp 750rb <span>/ bulan</span></div>
+          </div>
+
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> <span>Pembukuan & Rekonsiliasi Bank Bulanan</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Perhitungan PPh Final UMKM 0.5% (PP 55)</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Pembuatan E-Billing & Pelaporan SPT Bulanan</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Penerbitan & Input e-Faktur PPN / PPh 23</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Gratis Konsultasi Rutin via WhatsApp Group</span></li>
+          </ul>
+
+          <button class="btn btn-orange" onclick="openConsultModal('Paket Pajak UMKM Bulanan')">
+            Pilih Paket Bulanan &rarr;
+          </button>
+        </div>
+
+        <!-- Service 2: SPT Tahunan OP -->
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3 class="service-title">SPT Tahunan Orang Pribadi</h3>
+            <p class="service-subtitle">Untuk Pengusaha, Freelancer, Professional & Karyawan</p>
+          </div>
+
+          <div class="service-pricing">
+            <div class="price-start">Sekali Lapor</div>
+            <div class="price-val">Rp 500rb <span>/ tahun</span></div>
+          </div>
+
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> <span>Perhitungan Batas PTKP (TK/0 s/d K/3)</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Penyusunan Daftar Harta & Utang Legal</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Input Bukti Potong (1721-A1/A2 / PPh 23)</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Pelaporan e-Filing DJP Online Resmi</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Bukti Penerimaan Elektronik (BPE) DJP</span></li>
+          </ul>
+
+          <button class="btn btn-outline-teal" onclick="openConsultModal('Pembuatan SPT Tahunan Orang Pribadi')">
+            Pilih Layanan SPT &rarr;
+          </button>
+        </div>
+
+        <!-- Service 3: Konsultasi PT/CV -->
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3 class="service-title">Pendirian PT/CV & Tax Set-Up</h3>
+            <p class="service-subtitle">Untuk Startup & Founders Baru Berdiri</p>
+          </div>
+
+          <div class="service-pricing">
+            <div class="price-start">Paket Legalisasi + Pajak</div>
+            <div class="price-val">Rp 1.500rb <span>/ paket</span></div>
+          </div>
+
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> <span>Pengurusan NPWP Badan & Aktivasi EFIN</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Sertifikat Elektronik & Akun DJP Online Badan</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Konsultasi Pemilihan PT vs CV dari Sisi Pajak</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Permohonan Pengukuhan PKP (Jika Diperlukan)</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Bonus 1 Bulan Bebas Konsultasi Pajak Badan</span></li>
+          </ul>
+
+          <button class="btn btn-outline-orange" onclick="openConsultModal('Konsultasi Pendirian PT/CV & Legalisasi Pajak')">
+            Konsul PT/CV &rarr;
+          </button>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE TAX CALCULATOR WIDGET -->
+      <div class="tax-calc-box" id="kalkulator">
+        <div class="calc-grid">
+          <div class="calc-info">
+            <div class="badge-tag orange" style="background: rgba(243, 112, 35, 0.2); color: #FF9F43;">
+              <i class="fas fa-calculator"></i> Fitur Interaktif
+            </div>
+            <h3>Hitung Estimasi Pajak UMKM Anda Sekarang</h3>
+            <p>
+              Penasaran berapa pajak bulanan yang wajib disetor sesuai aturan terbaru PP 55/2022? Geser slider di sebelah kanan untuk melihat simulasinya!
+            </p>
+            <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+              <div style="background: rgba(255, 255, 255, 0.1); padding: 0.75rem 1rem; border-radius: var(--radius-sm);">
+                <div style="font-size: 0.75rem; color: #94A3B8;">Orang Pribadi</div>
+                <div style="font-weight: 700; color: #10B981;">Omset &lt; 500jt Tax Free</div>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.1); padding: 0.75rem 1rem; border-radius: var(--radius-sm);">
+                <div style="font-size: 0.75rem; color: #94A3B8;">Badan (PT/CV)</div>
+                <div style="font-weight: 700; color: #38BDF8;">Tarif PPh Final 0.5%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-form">
+            <div class="form-group">
+              <label for="entityType">Jenis Bentuk Usaha Anda:</label>
+              <select id="entityType" class="form-control">
+                <option value="op">Orang Pribadi (UMKM Perorangan)</option>
+                <option value="badan">Badan Usaha (PT / CV)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="omsetRange">Rata-rata Omset (Penjualan Kotor) / Bulan:</label>
+              <input type="range" id="omsetRange" min="5000000" max="500000000" step="5000000" value="45000000" style="width: 100%; accent-color: var(--primary-orange);">
+              <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #94A3B8; margin-top: 0.3rem;">
+                <span>Rp 5 Juta</span>
+                <span>Rp 500 Juta</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="omsetNumber">Input Nominal Omset (Rp):</label>
+              <input type="number" id="omsetNumber" class="form-control" value="45000000">
+            </div>
+
+            <div class="calc-result-card">
+              <div class="result-label">Estimasi Setoran Pajak PPh 0.5%:</div>
+              <div class="result-amount" id="resultTaxVal">Rp 0 / bulan</div>
+              <div class="result-note" id="resultNote">💡 Bebas Pajak s/d Omset 500 Juta/Tahun untuk Orang Pribadi.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE TAX HEALTH QUIZ -->
+  <section class="tax-quiz-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag teal">
+          <i class="fas fa-clipboard-check"></i> Cek Kesehatan Pajak
+        </div>
+        <h2 class="section-title">
+          Cek Kesehatan Pajak Bisnis Anda <span class="highlight-orange">dalam 30 Detik</span>
+        </h2>
+        <p class="section-subtitle">
+          Jawab 3 pertanyaan singkat ini untuk mengetahui potensi risiko sanksi dan paket penghematan pajak yang paling tepat.
+        </p>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quizProgressFill"></div>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="quiz-step active" data-step="1">
+          <h3 style="font-size: 1.25rem;">1. Apa bentuk legalitas usaha yang Anda jalankan saat ini?</h3>
+          <div class="quiz-options-grid">
+            <div class="quiz-option-card" data-key="entity" data-value="Orang Pribadi (Belum PT/CV)">
+              <i class="fas fa-user-circle" style="font-size: 1.5rem; color: var(--primary-orange);"></i>
+              <div>
+                <div>Orang Pribadi / Belum PT/CV</div>
+                <span style="font-size: 0.8rem; color: var(--neutral-muted);">Dagang online, UMKM rumahan, toko</span>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-key="entity" data-value="PT / CV (Badan)">
+              <i class="fas fa-building" style="font-size: 1.5rem; color: var(--secondary-teal);"></i>
+              <div>
+                <div>Sudah Memiliki PT / CV</div>
+                <span style="font-size: 0.8rem; color: var(--neutral-muted);">PT Perorangan, PT Biasa, CV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="quiz-step" data-step="2">
+          <h3 style="font-size: 1.25rem;">2. Berapa rata-rata omset kotor usaha Anda dalam 1 tahun?</h3>
+          <div class="quiz-options-grid">
+            <div class="quiz-option-card" data-key="omset" data-value="lt_500m">
+              <i class="fas fa-coins" style="font-size: 1.5rem; color: #10B981;"></i>
+              <div>Di Bawah Rp 500 Juta / Tahun</div>
+            </div>
+            <div class="quiz-option-card" data-key="omset" data-value="gt_500m">
+              <i class="fas fa-chart-line" style="font-size: 1.5rem; color: var(--primary-orange);"></i>
+              <div>Rp 500 Juta - 4.8 Miliar / Tahun</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="quiz-step" data-step="3">
+          <h3 style="font-size: 1.25rem;">3. Apa kendala pajak utama yang sedang dialami?</h3>
+          <div class="quiz-options-grid">
+            <div class="quiz-option-card" data-key="kendala" data-value="Takut Sanksi Denda & SP2DK">
+              <i class="fas fa-envelope-open-text" style="font-size: 1.5rem; color: var(--accent-red);"></i>
+              <div>Menerima Surat SP2DK / Takut Denda</div>
+            </div>
+            <div class="quiz-option-card" data-key="kendala" data-value="Bingung Lapor SPT & e-Faktur">
+              <i class="fas fa-question-circle" style="font-size: 1.5rem; color: var(--secondary-teal);"></i>
+              <div>Bingung Lapor SPT Tahunan & e-Faktur</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Result Box -->
+        <div class="quiz-step" data-step="4">
+          <div id="quizResultBox"></div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+          <button class="btn btn-outline-teal" id="quizPrevBtn" style="display: none;">&larr; Kembali</button>
+          <button class="btn btn-orange" id="quizNextBtn" disabled style="margin-left: auto;">Lanjut &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: TESTIMONI -->
+  <section class="testimonials" id="testimoni">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag orange">
+          <i class="fas fa-star"></i> Testimoni Pengusaha
+        </div>
+        <h2 class="section-title">
+          Apa Kata Para <span class="highlight-orange">Pemilik Bisnis Lokal</span>?
+        </h2>
+        <p class="section-subtitle">
+          Ratusan pemilik UMKM dan Startup telah menyerahkan urusan pajak mereka kepada Optimal Konsultan agar fokus mengembangkan bisnis.
+        </p>
+      </div>
+
+      <!-- Testi Filter -->
+      <div class="testi-filter">
+        <button class="testi-filter-btn active" data-category="all">Semua Kategori</button>
+        <button class="testi-filter-btn" data-category="kuliner">Kuliner & F&B</button>
+        <button class="testi-filter-btn" data-category="startup">Startup Digital</button>
+        <button class="testi-filter-btn" data-category="fashion">Fashion & Retail</button>
+        <button class="testi-filter-btn" data-category="jasa">Jasa Kreatif</button>
+      </div>
+
+      <div class="testi-grid">
+        <!-- Review 1 -->
+        <div class="testi-card" data-category="kuliner">
+          <div>
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-quote">
+              "Dulu sempat panik banget dapat surat klarifikasi SP2DK dari kantor pajak karena omset resto naik drastis tapi belum pernah lapor PPh 0.5%. Tim Optimal Konsultan bantu susun tanggapan resmi dan tuntas tanpa denda!"
+            </p>
+          </div>
+          <div class="testi-author">
+            <img src="assets/consultant_avatar.jpg" alt="Budi Santoso" class="author-avatar">
+            <div class="author-info">
+              <div class="name">Budi Santoso</div>
+              <div class="role">Owner Kopi Kenangan Lokal</div>
+            </div>
+            <span class="author-impact-tag">SP2DK Selesai</span>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testi-card" data-category="startup">
+          <div>
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-quote">
+              "Bagi kami founder startup muda, masalah pembukuan pajak dan e-Faktur PT Perorangan itu sangat bikin pusing. Layanan bulanan Optimal Konsultan sangat transparan dan harganya ramah kantong startup."
+            </p>
+          </div>
+          <div class="testi-author">
+            <img src="assets/hero_tax_consultant.jpg" alt="Rina Wijaya" class="author-avatar">
+            <div class="author-info">
+              <div class="name">Rina Wijaya</div>
+              <div class="role">Founder TechLabs.id</div>
+            </div>
+            <span class="author-impact-tag">Hemat Rp 18 Juta/thn</span>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testi-card" data-category="fashion">
+          <div>
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-quote">
+              "Saya pikir omset di bawah 500 juta tetap kena pajak 0.5%. Setelah dibantu tim Optimal Konsultan, ternyata ada aturan bebas pajak untuk OP sesuai PP 55. Penjelasannya mudah dipahami dan sangat jujur!"
+            </p>
+          </div>
+          <div class="testi-author">
+            <img src="assets/consultant_avatar.jpg" alt="Hendrik Pratama" class="author-avatar">
+            <div class="author-info">
+              <div class="name">Hendrik Pratama</div>
+              <div class="role">Owner Fashion Batik</div>
+            </div>
+            <span class="author-impact-tag">Bebas Pajak OP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag teal">
+          <i class="fas fa-question-circle"></i> FAQ Pajak
+        </div>
+        <h2 class="section-title">
+          Pertanyaan Umum <span class="highlight-teal">Seputar Pajak UMKM & PTKP</span>
+        </h2>
+        <p class="section-subtitle">
+          Temukan jawaban cepat atas pertanyaan pajak yang paling sering ditanyakan oleh pengusaha muda dan pemilik UMKM.
+        </p>
+      </div>
+
+      <!-- FAQ Live Search -->
+      <div class="faq-search-box">
+        <i class="fas fa-search faq-search-icon"></i>
+        <input type="text" id="faqSearchInput" class="faq-search-input" placeholder="Cari topik pajak (misal: PTKP, PP 55, e-Faktur, 0.5%)...">
+      </div>
+
+      <div class="faq-container">
+        <!-- Q1 -->
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Berapa batas omset bebas pajak untuk UMKM Orang Pribadi?</span>
+            <span class="faq-icon-toggle"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Berdasarkan <strong>PP No. 55 Tahun 2022</strong> (turunan UU HPP), Wajib Pajak Orang Pribadi UMKM yang menggunakan tarif PPh Final 0.5% diberikan batas <strong>Omset Tidak Kena Pajak hingga Rp 500.000.000 (Lima Ratus Juta Rupiah) per tahun pajak</strong>.
+            </p>
+            <div class="faq-highlight-box">
+              💡 <strong>Contoh:</strong> Jika omset usaha Anda Rp 400 Juta dalam setahun, maka setoran PPh Final Anda adalah <strong>Rp 0 (Bebas Pajak)</strong>. Jika omset Rp 700 Juta, pajak 0.5% hanya dikenakan atas selisihnya: (Rp 700 Juta - Rp 500 Juta) x 0.5% = Rp 1.000.000/tahun.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Bagaimana aturan batas PTKP (Penghasilan Tidak Kena Pajak) terbaru?</span>
+            <span class="faq-icon-toggle"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Batas PTKP digunakan untuk menghitung PPh 21 Karyawan/Pekerja Bebas. Besaran PTKP dasar saat ini adalah:
+            </p>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+              <li><strong>TK/0 (Lajang tanpa tanggungan):</strong> Rp 54.000.000 / tahun</li>
+              <li><strong>K/0 (Menikah tanpa tanggungan):</strong> Rp 58.500.000 / tahun</li>
+              <li><strong>K/1 (Menikah 1 anak):</strong> Rp 63.000.000 / tahun</li>
+              <li><strong>K/2 (Menikah 2 anak):</strong> Rp 67.500.000 / tahun</li>
+              <li><strong>K/3 (Menikah 3 anak - maksimal):</strong> Rp 72.000.000 / tahun</li>
+            </ul>
+            <p>Jika penghasilan bersih tahunan di bawah batas PTKP tersebut, maka tidak dikenakan PPh Pasal 21.</p>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Apakah PT atau CV baru berdiri bisa langsung pakai tarif 0.5%?</span>
+            <span class="faq-icon-toggle"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Ya, Wajib Pajak Badan baru (PT atau CV) yang beromset di bawah Rp 4.8 Miliar per tahun dapat memanfaatkan PPh Final UMKM 0.5%. Namun ada batasan jangka waktu pemanfaatan:
+            </p>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+              <li><strong>Badan PT:</strong> Maksimal 3 Tahun Pajak</li>
+              <li><strong>Badan CV / Koperasi / Firma:</strong> Maksimal 4 Tahun Pajak</li>
+              <li><strong>Orang Pribadi:</strong> Maksimal 7 Tahun Pajak</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Kapan usaha saya wajib mendaftar sebagai Pengusaha Kena Pajak (PKP)?</span>
+            <span class="faq-icon-toggle"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Usaha Wajib mendaftar PKP jika omset bruto (omset kotor) dalam 1 tahun buku telah melebihi <strong>Rp 4.800.000.000 (4.8 Miliar)</strong>. Namun, jika omset masih di bawah 4.8 Miliar, Anda tetap diperbolehkan mendaftar PKP secara sukarela (misal untuk transaksi e-Faktur dengan BUMN atau klien korporasi besar).
+            </p>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Bagaimana jika saya menerima surat SP2DK dari kantor pajak DJP?</span>
+            <span class="faq-icon-toggle"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Jangan panik! SP2DK (Surat Permintaan Penjelasan atas Data dan/atau Keterangan) adalah hal lumrah untuk klarifikasi selisih data. Segera konsultasikan ke Optimal Konsultan agar kami bisa mereview data penjualan, menyusun jawaban tertulis sesuai hukum pajak, dan mendampingi hingga diterbitkan Laporan Hasil Permintaan Penjelasan (LHP2).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER SECTION -->
+  <section style="background: linear-gradient(135deg, var(--primary-orange) 0%, #FF9F43 100%); padding: 80px 0; color: var(--neutral-white); text-align: center;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="font-size: 2.5rem; color: #FFFFFF; margin-bottom: 1rem;">
+        Siap Bebaskan Bisnis Anda dari Pusing Pajak?
+      </h2>
+      <p style="font-size: 1.15rem; opacity: 0.95; margin-bottom: 2rem;">
+        Konsultasikan kendala pajak usaha Anda bersama konsultan berpengalaman. Bebas tanya sepuasnya di sesi pertama!
+      </p>
+      <button class="btn btn-primary-wa" style="font-size: 1.1rem; padding: 1.1rem 2.25rem;" onclick="openConsultModal('Konsultasi Gratis Banner CTA')">
+        <i class="fab fa-whatsapp" style="font-size: 1.4rem;"></i>
+        Hubungi via WhatsApp, Gratis konsultasi untuk satu sesi
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo_optimal_konsultan.png" alt="Optimal Konsultan Logo" class="footer-logo">
+          <p>
+            Optimal Konsultan adalah mitra pajak terpercaya untuk pemilik UMKM, Startup, dan Pengusaha Muda di Indonesia. Solusi pajak legal, santai, dan transparan.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigasi Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#masalah-solusi">Masalah & Solusi</a></li>
+            <li><a href="#layanan">Paket Layanan Pajak</a></li>
+            <li><a href="#kalkulator">Kalkulator Pajak 0.5%</a></li>
+            <li><a href="#testimoni">Testimoni Klien</a></li>
+            <li><a href="#faq">FAQ Pajak UMKM</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Layanan Kami</h4>
+          <ul class="footer-links">
+            <li><a href="#layanan">Pajak UMKM Bulanan</a></li>
+            <li><a href="#layanan">SPT Tahunan Orang Pribadi</a></li>
+            <li><a href="#layanan">Pendirian PT & CV Tax Set-Up</a></li>
+            <li><a href="#layanan">Pendampingan SP2DK</a></li>
+            <li><a href="#layanan">Pengurusan PKP & e-Faktur</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Kontak & Kantor</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Gedung Optimal Tower, Jl. Jend. Sudirman No. 88, Jakarta Selatan</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>0812-3400-008</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>muhammadashari8502@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-globe"></i>
+            <span>www.optimalkonsultan.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Optimal Konsultan. Hak Cipta Dilindungi. Solusi Pajak UMKM & Startup Indonesia.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: #94A3B8;">Kebijakan Privasi</a>
+          <a href="#" style="color: #94A3B8;">Syarat & Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <div class="wa-float-btn" id="waFloatBtn" title="Hubungi Konsultan via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-float-badge"></span>
+  </div>
+
+  <!-- INTERACTIVE CONSULTATION MODAL -->
+  <div class="modal-overlay" id="consultModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <div class="badge-tag orange">
+          <i class="fab fa-whatsapp"></i> Gratis Konsultasi Sesi 1
+        </div>
+        <h3 style="font-size: 1.6rem; color: var(--neutral-dark);">Form Konsultasi Pajak WhatsApp</h3>
+        <p style="font-size: 0.9rem; color: var(--neutral-muted);">
+          Isi detail singkat usaha Anda. Sistem akan langsung menghubungkan ke konsultan senior kami via WhatsApp.
+        </p>
+      </div>
+
+      <form id="modalConsultForm">
+        <input type="hidden" id="modalServiceInput" value="Konsultasi Umum">
+        
+        <div class="form-group">
+          <label for="modalNama" style="color: var(--neutral-dark);">Nama Lengkap Anda:</label>
+          <input type="text" id="modalNama" class="form-control" style="background: #F8FAFC; color: #0F172A; border-color: #CBD5E1;" placeholder="Contoh: Andi Pratama" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modalUsaha" style="color: var(--neutral-dark);">Nama & Jenis Usaha:</label>
+          <input type="text" id="modalUsaha" class="form-control" style="background: #F8FAFC; color: #0F172A; border-color: #CBD5E1;" placeholder="Contoh: Kopi Nusantara (Resto/Kuliner)" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modalCatatan" style="color: var(--neutral-dark);">Pertanyaan atau Kendala Pajak:</label>
+          <textarea id="modalCatatan" class="form-control" style="background: #F8FAFC; color: #0F172A; border-color: #CBD5E1; height: 90px;" placeholder="Contoh: Ingin tanya tentang lapor SPT Tahunan & aturan 0.5%"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary-wa" style="width: 100%; margin-top: 1rem;">
+          <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Kirim Pesan & Buka WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

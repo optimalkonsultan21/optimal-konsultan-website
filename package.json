@@ -1,0 +1,21 @@
+{
+  "name": "optimal-konsultan-website",
+  "version": "1.0.0",
+  "description": "Website Interaktif Optimal Konsultan - Konsultan Pajak UMKM, Startup & Pengusaha Muda",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Build complete'",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "pajak-umkm",
+    "konsultan-pajak",
+    "optimal-konsultan",
+    "spt-tahunan",
+    "pph-0.5",
+    "ptkp"
+  ],
+  "author": "PT Optimal Konsultan Indonesia",
+  "license": "MIT"
+}
